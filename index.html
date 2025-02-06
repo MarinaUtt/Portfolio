@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+    <ul class="menu-list">
+      <li class="menu-item"><a class="menu-link" href="#main-page">ГЛАВНАЯ</a></li>
+      <li class="menu-item"><a class="menu-link" href="#portfolio-page">ПОРТФОЛИО</a></li>
+      <li class="menu-item"><a class="menu-link" href="#contacts-page">КОНТАКТЫ</a></li>
+    </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section id="main-page"class="main-page">
+      <div class="container main-page-container">
+        <div class="main-text-block">
+          <h1>Сайт-портфолио <br>Утешовой Марины</h1>
+          <p class="main-page-text">Привет! Меня зоут Марина и я делаю первые шаги во Frontend разработке. Можешь посмотреть мое портфолио</p>
+          <a class="menu-link" href="#portfolio-page">
+            <button class="main-button">Смотреть портфолио</button>
+          </a>
+        </div>
+        <div class="main-img-block">
+          <img src="img/i.webp" alt="photo-author" class="main-img">
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio-page">
+      <div class="container portfolio-page-container">
+        <h2 class="portfolio-page">ПОРТФОЛИО</h2>
+
+        <div class="portfolio-slider">
+          <div class="arrow-left"> < </div>
+
+          <div class="slide active-slide">
+            <a href="projects/mymebel/" target="blank">
+              <h3 class="title-slide">My mebel</h3>
+              <p class="slide-text">Сайт для мебельного магазина</p>
+              <img class="slide-img" src="img/slide1.png">  
+            </a>
+          </div>
+
+          <div class="slide">
+            <a href="projects/сalculator/" target="blank">
+              <h3 class="title-slide">Калькулятор</h3>
+              <p class="slide-text">Простейший калькулятор для выполнения не сложных арифмитических действий</p>
+              <img class="slide-img" src="img/slide2.png">  
+            </a>
+          </div>
+
+          <div class="slide">
+            <a href="projects/MyFirstRepository/" target="blank">
+              <h3 class="title-slide">Мир окон</h3>
+              <p class="slide-text">Сайт для производителя пластиковых окон, дверей и сопуствующих товаров</p>
+              <img class="slide-img" src="img/slide3.png">  
+            </a>
+          </div>
+
+          <div class="arrow-right">></div>
+          <div class="slider-dots">
+            <div class="dot active-dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts-page">
+      <div class="container">
+        <h2 class="contacts-title">КОНТАКТЫ</h2>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container container-footer">
+      <div>2025</div>
+      <div>г.Караганда</div>
+    </div>
+  </footer>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
