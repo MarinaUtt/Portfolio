@@ -1,6 +1,4 @@
-import {sliderDots, slides } from "../script.js"
-
-export function scrollSlide(i) {
+export function scrollSlide(i, slides, sliderDots) {
   slides.forEach(element => {
     element.classList.remove('active-slide');
   })

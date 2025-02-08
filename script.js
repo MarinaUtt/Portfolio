@@ -1,7 +1,7 @@
 const arrowLeft = document.querySelector('.arrow-left');
 const arrowRight = document.querySelector('.arrow-right');
-export const slides = document.querySelectorAll('.slide');
-export const sliderDots = document.querySelectorAll('.dot')
+const slides = document.querySelectorAll('.slide');
+const sliderDots = document.querySelectorAll('.dot')
 let currentSlide = 0;
 
 import { scrollSlide } from "./modules/scrollslide.js";
@@ -12,7 +12,7 @@ arrowLeft.addEventListener('click', () =>{
   } else {
     currentSlide -= 1;
   }
-  scrollSlide(currentSlide);
+  scrollSlide(currentSlide,slides, sliderDots);
 })
 
 arrowRight.addEventListener('click', () =>{
@@ -21,12 +21,12 @@ arrowRight.addEventListener('click', () =>{
   } else {
     currentSlide += 1;
   }
-  scrollSlide(currentSlide);
+  scrollSlide(currentSlide,slides, sliderDots);
 })
 
 sliderDots.forEach(function(dot, i) {
   dot.addEventListener('click', ()=>{
     currentSlide = i;
-    scrollSlide(currentSlide);
+    scrollSlide(currentSlide,slides, sliderDots);
   })
 })
