@@ -127,6 +127,7 @@ h2{
   height: 600px;
   justify-content: space-between;
   flex-direction: column;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -135,11 +136,12 @@ h2{
 }
 
 .portfolio-slider{
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .arrow-left{
-  position: absolute;
   color: white;
   font-size: 60px;
   font-weight: 700;
@@ -147,12 +149,9 @@ h2{
   width: 60px;
   height: 60px;
   background-color: rgba(0, 0, 0, 0.07);
-  left: -20px;
-  top: 300px;
 }
 
 .arrow-right{
-  position: absolute;
   color: white;
   font-size: 60px;
   font-weight: 700;
@@ -160,8 +159,6 @@ h2{
   width: 60px;
   height: 60px;
   background-color: rgba(0, 0, 0, 0.07);
-  right: -20px;
-  top: 300px;
 }
 
 .arrow-left:hover{
@@ -256,11 +253,59 @@ h3:hover{
 }
 
 .contacts{
-  height: 800px;
+  height: 400px;
   background-color: #d8dfbe;
 }
 
 .contacts-title{
+  color: #5a6b51;
+}
+
+.contact-block {
+  display: flex;
+  height: 150px;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.contact-item{
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: #272e24;
+}
+
+.phone::before{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -60px;
+  left: 70px;
+  content: '';
+  background: url(img/icon-phone.svg) no-repeat center / contain;
+}
+
+.whatsapp::before{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -60px;
+  left: 80px;
+  content: '';
+  background: url(img/icon-whatsapp.svg) no-repeat center / contain;
+}
+
+.github::before{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -60px;
+  left: 25px;
+  content: '';
+  background: url(img/icon-github.svg) no-repeat center / contain;
+}
+
+.link:hover{
   color: #5a6b51;
 }
 
@@ -278,3 +323,151 @@ footer{
   font-size: 18px;
 }
 
+@media (max-width: 1200px){
+  .container{
+    width: 800px;
+  }
+  .main-page-container{
+    height: 600px;
+  }
+  .main-img{
+    width: 300px;  
+  }
+  .portfolio{
+    height: auto;
+  }
+  .slide{
+    width: 700px;
+    height: 350px;
+  }
+  .slide-img{
+    width: 600px;
+    height: 340px;
+    margin: 0 auto;
+  }
+  .slider-dots{
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 825px){
+  .container{
+    width: 600px;
+  }
+  .main-page{
+    height: auto;
+    padding-bottom: 100px;
+  }
+  .main-page-container{
+    align-items: center;
+  }
+  .main-img-block{
+    width: 200px;
+    height: 250px;
+  }
+  .main-img{
+    width: 200px;
+  }
+  .main-text-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: auto;
+    height: 100%;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 750px){
+  .portfolio-slider{
+    width: 500px;
+    height: auto;
+  }
+  .slide{
+    width: 460px;
+    height: 350px;
+  }
+  .slide-img{
+    width: 400px;
+    height: 230px;
+    margin: 0 auto;
+  }
+  .slider-dots{
+    margin-top: 20px;
+  }
+  
+}
+
+@media (max-width: 620px){
+  .container{
+    width: 500px;
+  }
+  .main-img-block{
+    display: none;
+  }
+  .contact-block{
+    flex-direction: column;
+    gap: 90px;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+  .contact-item::before{
+    left: 0;
+  }
+}
+
+@media (max-width: 515px){
+  .container{
+    width: 450px;
+  }
+  .main-page-container{
+    width: 100%;
+    padding: 0 10px;
+  }
+  .portfolio-slider{
+    width: 300px;
+    margin: 0 auto;
+  }
+  .slide{
+    width: 350px;
+    height: auto;
+  }
+  .slide-img{
+    width: 250px;
+    height: 140px;
+  }
+  .arrow-left,.arrow-right{
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 450px){
+  .container{
+    width: 300px;
+  } 
+  .main-page-container{
+    height: auto;
+    padding: 30px 10px;
+
+  }
+
+  .menu-list{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding-top: 10px;
+  }
+  h1{
+    font-size: 32px;
+    width: auto;
+  }
+  .main-page-text{
+    font-size: 20px;
+  }
+  .main-button{
+    width: 150px;
+  }
+
+}

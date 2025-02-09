@@ -2,12 +2,14 @@
   height: 180px;
   background-color: #d8dfbe;
   border-bottom: 3px solid #000000;
+  font-family: "Inter", sans-serif;
 }
 
 .title-info-block{
   font-size: 32px;
   font-weight: 700;
   padding: 25px 0 15px 100px;
+  font-family: "Inter", sans-serif;
 }
 
 .description-info-block{
@@ -15,6 +17,7 @@
   font-weight: 500;
   padding-left: 100px;
   padding-bottom: 35px;
+  font-family: "Inter", sans-serif;
 }
 
 .github-link{
@@ -22,6 +25,7 @@
   font-weight: 500;
   padding-left: 100px;
   color: #000000;
+  font-family: "Inter", sans-serif;
 }
 
 .github-link:hover{
